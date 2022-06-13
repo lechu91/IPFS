@@ -6,7 +6,7 @@ def pin_to_ipfs(data):
 	#YOUR CODE HERE
 	print("1")
 	
-	json_object = json.dump(data) 
+	json_object = json.dump(data, indent = 4) 
 	
 	files = {
 		'file': json_object,

@@ -6,8 +6,7 @@ def pin_to_ipfs(data):
 	#YOUR CODE HERE
 	print("1")
 	
-	
-	response = requests.post('https://gonzalo.ipfs.infura.io:5001/add', json = data)
+	response = requests.post('https://ipfs.infura.io:5001/add', data = data)
 	
 	cid = response.text
 	

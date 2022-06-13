@@ -10,8 +10,10 @@ def pin_to_ipfs(data):
 	
 	cid = response.text
 	
-	print("2")
+	
+	print("1.9")
 	print(cid)
+	print("2")
 
 	return cid
 

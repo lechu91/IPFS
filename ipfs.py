@@ -16,7 +16,7 @@ def pin_to_ipfs(data):
 
 	response = requests.post('https://ipfs.infura.io:5001/api/v0/add', files = files, auth = auth)
 	
-	cid = response['Hash']
+	cid = response.text['Hash']
 	
 	print("1.9")
 	print(cid)

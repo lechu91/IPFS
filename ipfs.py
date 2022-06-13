@@ -35,7 +35,7 @@ def get_from_ipfs(cid,content_type="json"):
 	print(response)
 	
 	
-	data = json.dumps(response, indent = 4) 
+	data = response.json()
 	
 	assert isinstance(data,dict), f"get_from_ipfs should return a dict"
 	return data

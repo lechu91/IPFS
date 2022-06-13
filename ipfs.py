@@ -28,9 +28,11 @@ def get_from_ipfs(cid,content_type="json"):
 	
 	params = (('arg', cid),)
 	
-	data = requests.post('https://ipfs.infura.io:5001/api/v0/block/cat', params=params)
+	auth = ("2AW1mnzV6tcq27eNtvbTl3cgPXW","4db7b25efb64a0104b2ec86b7cc6ba77")
 	
-	print(type(data))
+	response = requests.post('https://ipfs.infura.io:5001/api/v0/block/cat', params=params, auth = auth)
+	
+	print(response.text)
 	
 	print("4")
 	

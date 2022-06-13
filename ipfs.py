@@ -10,7 +10,7 @@ def pin_to_ipfs(data):
 		'file': data,
 	}
 	
-	auth = (<2AW1mnzV6tcq27eNtvbTl3cgPXW>,<4db7b25efb64a0104b2ec86b7cc6ba77>)
+	auth = ("<2AW1mnzV6tcq27eNtvbTl3cgPXW>","<4db7b25efb64a0104b2ec86b7cc6ba77>")
 	
 	response = requests.post('https://ipfs.infura.io:5001/api/v0/add', files = files, auth = auth)
 	

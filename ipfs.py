@@ -7,7 +7,7 @@ def pin_to_ipfs(data):
 	print("1")
 	
 	files = {
-		'file': data,
+		'file': json.dump(dictionary,data),
 	}
 	
 	auth = ("<2AW1mnzV6tcq27eNtvbTl3cgPXW>","<4db7b25efb64a0104b2ec86b7cc6ba77>")

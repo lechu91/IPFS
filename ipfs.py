@@ -18,7 +18,9 @@ def get_from_ipfs(cid,content_type="json"):
 	
 	print("3")
 	
-	data = requests.post('https://ipfs.infura.io:5001/api/v0/block/cat', params=cid)
+	params = (('arg', cid),)
+	
+	data = requests.post('https://ipfs.infura.io:5001/api/v0/block/cat', params=params)
 	
 	print("4")
 	

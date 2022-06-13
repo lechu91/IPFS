@@ -8,12 +8,10 @@ def pin_to_ipfs(data):
 	
 	response = requests.post('https://ipfs.infura.io:5001/api/v0/add', json = data)
 	
-	p = response.json()
-	cid = p['Hash']
+	cid = response.text
 	
 	print("2")
 	print(cid)
-	print(type(cid))
 
 	return cid
 

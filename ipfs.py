@@ -32,7 +32,7 @@ def get_from_ipfs(cid,content_type="json"):
 	
 	response = requests.post('https://ipfs.infura.io:5001/api/v0/block/cat', params=params, auth = auth)
 	
-	print(response.text)
+	print(response)
 	
 	print("4")
 	

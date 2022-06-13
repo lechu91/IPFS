@@ -9,6 +9,8 @@ def pin_to_ipfs(data):
 	cid = requests.post('https://ipfs.infura.io:5001/api/v0/add', json = data)
 	
 	print("2")
+	print(cid)
+	print(type(cid))
 
 	return cid
 
@@ -17,6 +19,7 @@ def get_from_ipfs(cid,content_type="json"):
 	#YOUR CODE HERE	
 	
 	print("3")
+	print(cid)
 	
 	params = (('arg', cid),)
 	

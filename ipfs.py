@@ -17,6 +17,8 @@ def pin_to_ipfs(data):
 	
 	p = response.json()
 	cid = p['Hash']
+	
+	print(cid)
 
 	return cid
 
